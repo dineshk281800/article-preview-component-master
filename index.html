@@ -11,7 +11,7 @@
       href="images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/queries.css" /> -->
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Article preview component</title>
   </head>
   <body>
@@ -41,13 +41,50 @@
                   <p class="date">28 Jun 2020</p>
                 </div>
               </div>
-              <div class="share">
-                <img src="images/icon-share.svg" alt="" class="share-icon" />
+              <div class="share" onclick="showing()">
+                <p class="btn">
+                  <img src="images/icon-share.svg" alt="" class="share-icon" />
+                </p>
+                <div class="icon-box" id="icon-box">
+                  <div class="icon-container" id="icon-box">
+                    <a href="#" class="icon icon1">SHARE</a>
+                    <a href="#">
+                      <img
+                        src="images/icon-facebook.svg"
+                        alt="share"
+                        class="icon icon2"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="images/icon-twitter.svg"
+                        alt="share"
+                        class="icon icon3"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="images/icon-pinterest.svg"
+                        alt="share"
+                        class="icon icon4"
+                      />
+                    </a>
+                  </div>
+                  <div class="icon-shape"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      const iconBox = document.getElementById("icon-box");
+
+      function showing() {
+        iconBox.classList.toggle("open-box");
+      }
+    </script>
   </body>
 </html>

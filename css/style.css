@@ -29,33 +29,31 @@ body {
 }
 
 .preview-card {
-  /* width: 36rem;
-  height: 17rem; */
   background-color: #fff;
-  border-radius: 1rem;
-  overflow: hidden;
+  border-radius: 1.5rem;
   display: grid;
   grid-template-columns: 28rem 53rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-
-/* .container,
-.preview-card {
-  
-} */
 
 .image {
   width: 28rem;
   height: 35rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
+
 .card {
   padding: 4rem;
 }
+
 .topic {
   color: var(--Very-Dark-Grayish-Blue);
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
+
 .para {
   font-size: 1.5rem;
   color: var(--Desaturated-Dark-Blue);
@@ -66,15 +64,15 @@ body {
 .profile,
 .box {
   display: flex;
+  align-items: center;
+}
+
+.box {
+  margin-top: 1rem;
 }
 
 .profile {
-  align-items: center;
   margin-right: 17rem;
-}
-.box {
-  align-items: center;
-  margin-top: 1rem;
 }
 
 .profile-img {
@@ -96,6 +94,7 @@ body {
 }
 
 .share {
+  position: relative;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -104,7 +103,70 @@ body {
   align-items: center;
   background-color: var(--Light-Grayish-Blue);
 }
+.share:hover {
+  background-color: var(--Very-Dark-Grayish-Blue);
+}
 .share-icon {
   width: 1.8rem;
   height: 1.8rem;
+}
+
+img.share-icon:hover {
+  fill: var(--Light-Grayish-Blue);
+}
+
+.btn {
+  /* border: none; */
+  cursor: pointer;
+}
+
+.icon-box {
+  display: none;
+  position: absolute;
+  bottom: 5rem;
+  z-index: 5;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.share:hover .icon-box {
+  display: block;
+}
+
+.icon-container {
+  background-color: var(--Very-Dark-Grayish-Blue);
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  height: 5.5rem;
+  padding: 0 4rem;
+  position: relative;
+  border-radius: 15px;
+  z-index: 2;
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.icon-shape {
+  width: 25px;
+  height: 25px;
+  background-color: var(--Very-Dark-Grayish-Blue);
+  position: relative;
+  bottom: 12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  text-align: center;
+  fill: var(--Desaturated-Dark-Blue);
+}
+
+.icon1 {
+  color: var(--Desaturated-Dark-Blue);
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
 }
