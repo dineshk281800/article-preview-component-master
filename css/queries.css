@@ -1,72 +1,131 @@
 /**************************/
-/* BELOW 1400px */
-/**************************/
-/* 
-@media (max-width: 88em) {
-  .icon-box {
-    right: 23rem;
-  }
-} */
-
-/**************************/
-/* BELOW 1360px */
-/**************************/
-/* 
-@media (max-width: 86em) {
-  .icon-box {
-    right: 22rem;
-  }
-} */
-
-/**************************/
-/* BELOW 1330px */
-/**************************/
-/* 
-@media (max-width: 81em) {
-  .icon-box {
-    //bottom: 25rem;
-    right: 20rem;
-  }
-} */
-
-/**************************/
-/* BELOW 1210px */
-/**************************/
-/* 
-@media (max-width: 75em) {
-  .icon-box {
-    right: 14rem;
-  }
-} */
-
-/**************************/
-/* BELOW 1180px */
-/**************************/
-/* 
-@media (max-width: 73em) {
-  .icon-box {
-    right: 11rem;
-    //bottom: 30rem;
-  }
-} */
-
-/**************************/
 /* BELOW 1030px */
 /**************************/
-/* 
-@media (max-width: 65em) {
-  .icon-box {
-    right: 4rem;
+
+@media (max-width: 59em) {
+  .preview-card {
+    grid-template-columns: 47.5rem;
+    grid-template-rows: 28rem 42rem;
+
+    overflow: hidden;
   }
-} */
+
+  .image {
+    width: 100%;
+    height: 28rem;
+    border-radius: 0;
+  }
+
+  .card {
+    padding: 4rem 4rem 1rem;
+  }
+
+  .topic {
+    margin-bottom: 1.7rem;
+  }
+
+  .para {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+
+  .profile {
+    padding-right: 12rem;
+    /* height: 3rem; */
+  }
+
+  /* .name {
+    font-size: 1.7rem;
+  } */
+
+  .share {
+    z-index: 10;
+    /* margin-left: 2rem; */
+  }
+
+  .icon-container {
+    width: 100%;
+    height: 10.5rem;
+    padding: 0 20rem 0 2rem;
+    border-radius: 0;
+    gap: 0;
+  }
+
+  .icon-box {
+    /* width: 48rem; */
+    height: 13rem;
+    bottom: -6rem;
+    right: -4rem;
+    z-index: 3;
+  }
+  .icon-shape {
+    display: none;
+  }
+
+  .icon1 {
+    font-size: 2rem;
+  }
+  .icon {
+    height: 3rem;
+    padding: 0 1rem;
+  }
+}
 
 /**************************/
-/* BELOW 950px */
+/* BELOW 540px */
 /**************************/
-/* 
-@media (max-width: 50em) {
+@media (max-width: 34em) {
   .preview-card {
-    grid-auto-flow: column;
-    grid-auto-columns: 28rem;
+    grid-template-columns: 41rem;
+    grid-template-rows: 26rem 41rem;
+
+    overflow: hidden;
   }
-} */
+
+  .image {
+    width: 100%;
+    height: 26rem;
+    border-radius: 0;
+  }
+
+  .card {
+    padding: 2.5rem 2.5rem 1rem;
+  }
+
+  .topic {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .para {
+    font-size: 1.9rem;
+    margin-bottom: 3rem;
+  }
+
+  .profile {
+    padding-right: 8rem;
+  }
+
+  .name {
+    font-size: 1.7rem;
+  }
+
+  .icon-container {
+    width: 100%;
+    height: 10.5rem;
+    padding: 0 14rem 0 2rem;
+    border-radius: 0;
+    gap: 0;
+  }
+
+  .icon-box {
+    /* width: 48rem; */
+    height: 13rem;
+    bottom: -6rem;
+    right: -4rem;
+    z-index: 3;
+  }
+  .icon-shape {
+    display: none;
+  }
+}

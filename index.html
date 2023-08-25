@@ -43,7 +43,11 @@
               </div>
               <div class="share" onclick="showing()">
                 <p class="btn">
-                  <img src="images/icon-share.svg" alt="" class="share-icon" />
+                  <img
+                    src="images/icon-share.svg"
+                    alt="share icon"
+                    class="share-icon"
+                  />
                 </p>
                 <div class="icon-box" id="icon-box">
                   <div class="icon-container" id="icon-box">
@@ -83,8 +87,21 @@
       const iconBox = document.getElementById("icon-box");
 
       function showing() {
-        iconBox.classList.toggle("open-box");
+        iconBox.classList.add("open-box");
       }
+
+      document.onclick = function (e) {
+        if (!e.target.matches(".share")) {
+          var dropdowns = document.getElementsByClassName("icon-box");
+
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("open-box")) {
+              openDropdown.classList.remove("open-box");
+            }
+          }
+        }
+      };
     </script>
   </body>
 </html>
