@@ -105,9 +105,10 @@ body {
 }
 
 /* icon hover */
-/* .share:hover {
-  background-color: var(--Very-Dark-Grayish-Blue);
-} */
+.share:hover {
+  /* color: #ecf2f8; */
+  background-color: var(--Desaturated-Dark-Blue);
+}
 .share-icon {
   width: 2rem;
   height: 2rem;

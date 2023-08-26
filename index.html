@@ -42,12 +42,20 @@
                 </div>
               </div>
               <div class="share" onclick="showing()">
-                <p class="btn">
-                  <img
-                    src="images/icon-share.svg"
-                    alt="share icon"
-                    class="share-icon"
-                  />
+                <p class="btn share">
+                  <svg
+                    class="share-icon share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="13"
+                  >
+                    <path
+                      id="shared"
+                      class="share share-icon"
+                      fill="#6E8098"
+                      d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                    />
+                  </svg>
                 </p>
                 <div class="icon-box" id="icon-box">
                   <div class="icon-container" id="icon-box">
@@ -88,18 +96,17 @@
 
       function showing() {
         iconBox.classList.add("open-box");
+
+        const img = document.getElementById("shared");
+        img.style.fill = "#ecf2f8";
       }
 
       document.onclick = function (e) {
         if (!e.target.matches(".share")) {
-          var dropdowns = document.getElementsByClassName("icon-box");
+          iconBox.classList.remove("open-box");
 
-          for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("open-box")) {
-              openDropdown.classList.remove("open-box");
-            }
-          }
+          const img = document.getElementById("shared");
+          img.style.fill = "#6E8098";
         }
       };
     </script>

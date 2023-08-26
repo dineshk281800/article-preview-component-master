@@ -5,7 +5,7 @@
 @media (max-width: 59em) {
   .preview-card {
     grid-template-columns: 47.5rem;
-    grid-template-rows: 28rem 42rem;
+    grid-template-rows: 28rem 41rem;
 
     overflow: hidden;
   }
@@ -34,9 +34,9 @@
     /* height: 3rem; */
   }
 
-  /* .name {
+  .name {
     font-size: 1.7rem;
-  } */
+  }
 
   .share {
     z-index: 10;
@@ -45,8 +45,8 @@
 
   .icon-container {
     width: 100%;
-    height: 10.5rem;
-    padding: 0 20rem 0 2rem;
+    height: 11.5rem;
+    padding: 0 19rem 2rem 4rem;
     border-radius: 0;
     gap: 0;
   }
@@ -55,7 +55,7 @@
     /* width: 48rem; */
     height: 13rem;
     bottom: -6rem;
-    right: -4rem;
+    right: -5rem;
     z-index: 3;
   }
   .icon-shape {
@@ -124,6 +124,74 @@
     bottom: -6rem;
     right: -4rem;
     z-index: 3;
+  }
+  .icon-shape {
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 426px */
+/**************************/
+@media (max-width: 27em) {
+  .preview-card {
+    grid-template-columns: 35rem;
+    grid-template-rows: 26rem 38rem;
+
+    overflow: hidden;
+  }
+
+  .image {
+    width: 100%;
+    height: 26rem;
+    border-radius: 0;
+  }
+
+  .card {
+    padding: 3rem 2.5rem;
+  }
+
+  .topic {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .para {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+  }
+
+  .box {
+    margin-top: 2rem;
+  }
+
+  .profile {
+    padding-right: 3rem;
+  }
+
+  .name {
+    font-size: 1.7rem;
+  }
+
+  .icon-container {
+    width: 100%;
+    height: 10rem;
+    margin-left: 1rem;
+    padding: 0 10rem 0 3rem;
+    border-radius: 0;
+    gap: 0;
+  }
+
+  .icon-box {
+    height: 9rem;
+    bottom: -2rem;
+    right: -2rem;
+    z-index: 3;
+  }
+
+  .icon {
+    padding: 0 1rem 0 0;
   }
   .icon-shape {
     display: none;
