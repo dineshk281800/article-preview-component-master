@@ -29,7 +29,7 @@ body {
 }
 
 .preview-card {
-  background-color: #fff;
+  background-color: #fcfdfd;
   border-radius: 1.5rem;
   display: grid;
   grid-template-columns: 28rem 53rem;
@@ -106,20 +106,14 @@ body {
 
 /* icon hover */
 .share:hover {
-  /* color: #ecf2f8; */
   background-color: var(--Desaturated-Dark-Blue);
 }
 .share-icon {
   width: 2rem;
   height: 2rem;
 }
-/* 
-img.share-icon:hover {
-  fill: var(--Light-Grayish-Blue);
-} */
 
 .btn {
-  /* border: none; */
   cursor: pointer;
 }
 
@@ -129,10 +123,6 @@ img.share-icon:hover {
   bottom: 6rem;
   z-index: 5;
 }
-
-/* .share:hover .icon-box {
-  display: block;
-} */
 
 .open-box {
   display: block;
@@ -165,7 +155,6 @@ img.share-icon:hover {
 .icon {
   text-align: center;
   padding: 0 1rem;
-  fill: var(--Desaturated-Dark-Blue);
 }
 
 .icon1 {
