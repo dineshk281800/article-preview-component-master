@@ -93,7 +93,7 @@ body {
   color: var(--Desaturated-Dark-Blue);
 }
 
-.share {
+.share-box {
   position: relative;
   width: 5rem;
   height: 5rem;
@@ -105,9 +105,9 @@ body {
 }
 
 /* icon hover */
-.share:hover {
+/* .share-box:hover {
   background-color: var(--Desaturated-Dark-Blue);
-}
+} */
 .share-icon {
   width: 2rem;
   height: 2rem;
